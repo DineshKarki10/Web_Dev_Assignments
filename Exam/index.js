@@ -9,7 +9,7 @@ async function fetchData() {
             loading.style.display = 'none';
         }
         data.forEach(element => {
-            if (element.id >= 15) {
+            if (element.id <= 15) {
                 const li = document.createElement("li");
                 li.textContent = element.title;
                 List.appendChild(li);  
